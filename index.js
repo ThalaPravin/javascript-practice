@@ -20,6 +20,22 @@ const ans2=arr.filter((n)=>{
     else return true;
 })
 
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce(function (result, item) {
+    console.log("result",result)
+    console.log("item",item)
+  return result +item;
+}, 0);
+const multi = numbers.reduce(function (result, item) {
+    console.log("result",result)
+    console.log("item",item);
 
-console.log(ans);
-console.log(ans2);
+  return result* item;
+}, 1);
+
+console.log("Sum is" ,sum);
+console.log("Multiplication is" ,multi);
+
+
+// console.log(ans);
+// console.log(ans2);
